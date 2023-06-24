@@ -26,7 +26,7 @@
       </div>
         <div class="container-scroller">
             @include("admin.navbar")
-            <div style="position:static; top:60px; right:-150px">
+            <div style="position:relative; top:60px;">
                 <form action="{{url('/uploadfood')}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div>
