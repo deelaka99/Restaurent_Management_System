@@ -18,7 +18,10 @@ use App\Http\Controllers\AdminController;
 Route::get('/',[HomeController::class,"index"]);
 Route::get('/redirects',[HomeController::class,"redirects"]);
 Route::get('/users',[AdminController::class,"users"]);
+Route::get('/deletemenu/{id}',[AdminController::class,"deletemenu"]);
 Route::get('/deleteuser/{id}',[AdminController::class,"deleteuser"]);
+Route::get('/updateview/{id}',[AdminController::class,"updateview"]);
+Route::post('/update/{id}',[AdminController::class,"update"]);
 Route::get('/foodmenu',[AdminController::class,"foodmenu"]);
 Route::post('/uploadfood',[AdminController::class,"upload"]);
 
