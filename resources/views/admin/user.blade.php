@@ -8,19 +8,22 @@
     <div class="container-scroller">
         @include("admin.navbar")
         <div style="position:relative; top:60px; right:-150px">
-            <table bgcolor="grey" border="3px">
-                <tr>
-                    <th style="padding:30px">Name</th>
-                    <th style="padding:30px">Email</th>
-                    <th style="padding:30px">Action</th>
+            <div>
+                <h1 align="center">Registered Users</h1>
+            </div>
+            <table border="1" class="table table-secondary table-hover">
+                <tr bgcolor="darkgrey">
+                    <th style="padding:20px;color:black">Name</th>
+                    <th style="padding:20px;color:black">Email</th>
+                    <th style="padding:20px;color:black">Action</th>
                 </tr>
 
                 @foreach($data as $data)
-                <tr align="center">
+                <tr align="center" bgcolor="black">
                     <td>{{$data->name}}</td>
                     <td>{{$data->email}}</td>
                     @if($data->userType=="0")
-                        <td><a href="{{url('/deleteuser',$data->id)}}">Delete</a></td>
+                        <td><button class="btn btn-danger"><a style="text-decoration:none;color:white" href="{{url('/deleteuser',$data->id)}}">Delete</a></button></td>
                     @else
                         <td><a>Not Allowed</a></td>
                     @endif 

@@ -27,14 +27,17 @@
         <div class="container-scroller">
             @include("admin.navbar")
             <div style="position:relative; top:70px;">
-                <table class="table" bgcolor="black" border="1">
+                <div>
+                  <h1 align="center" class="h1 display-3">Reservations</h1>
+                </div>
+                <table class="table table-dark table-hover" bgcolor="black" border="1">
                     <tr>
-                        <th style="padding:30px">Name</th>
-                        <th style="padding:30px">Email</th>
-                        <th style="padding:30px">Phone</th>
-                        <th style="padding:30px">Date</th>
-                        <th style="padding:30px">Time</th>
-                        <th style="padding:30px">Message</th>
+                        <th style="padding:30px;color:white">Name</th>
+                        <th style="padding:30px;color:white">Email</th>
+                        <th style="padding:30px;color:white">Phone</th>
+                        <th style="padding:30px;color:white">Date</th>
+                        <th style="padding:30px;color:white">Time</th>
+                        <th style="padding:30px;color:white">Message</th>
                     </tr>
                     @foreach($data as $data)
                     <tr align="center">

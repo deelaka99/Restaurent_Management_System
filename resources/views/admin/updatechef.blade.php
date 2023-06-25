@@ -28,30 +28,30 @@
         <div class="container-scroller">
             @include("admin.navbar")
             <div style="position:relative; top:60px;">
-              <div class="card">
+            <div class="card">
                 <div class="card-header text-center">
                   <h1 align="center">Update Current Foods</h1>
                 </div>
                 <div class="card-body">
                   <blockquote class="blockquote mb-0">
-                  <form action="{{url('/update',$data->id)}}" method="post" enctype="multipart/form-data">
+                  <form action="{{url('/updatefoodchef',$data->id)}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Title</label>
+                        <label class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
-                          <input class="form-control" style="color:lightgreen" type="text" name="title" value="{{$data->title}}" placeholder="Write a title" required>
+                          <input class="form-control" style="color:lightgreen" type="text" name="name" value="{{$data->name}}" placeholder="Enter new name" required>
                         </div>
                     </div >
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Price</label>
+                        <label class="col-sm-2 col-form-label">Speciality</label>
                         <div class="col-sm-10">
-                          <input class="form-control" style="color:lightgreen" type="number" name="price" value="{{$data->price}}" placeholder="Price" required>
+                          <input class="form-control" style="color:lightgreen" type="text" name="speciality" value="{{$data->speciality}}" placeholder="Enter speciality" required>
                         </div>
                     </div>              
                       <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Old Image</label>
                         <div class="col-sm-10">
-                          <img height="200" width="200" src="/foodimage/{{$data->image}}">
+                          <img height="200" width="200" src="/chefimage/{{$data->image}}">
                         </div>
                       </div>
                       <div class="form-group row">
@@ -68,14 +68,14 @@
                       </div> 
                       <div class="form-group row">
                           <div class="col-sm-10">
-                            <input type="submit" value="Update food" class="btn btn-primary">
+                            <input type="submit" value="Update chef" class="btn btn-primary">
                           </div>
                       </div>  
                     </form>
                   </blockquote>
                 </div>
-              </div> 
-              <!--Form ends from hre-->
+              </div>
+                <!--Form ends from hre-->
             </div>
         </div>
       <!-- page-body-wrapper ends -->

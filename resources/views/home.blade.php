@@ -196,8 +196,7 @@ https://templatemo.com/tm-558-klassy-cafe
     </section>
     <!-- ***** About Area Ends ***** -->
     @include("food")
-    
-
+    @include("foodchef")
     @include("reservation")
 
     <!-- ***** Menu Area Starts ***** -->
