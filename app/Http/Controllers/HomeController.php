@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 use App\Models\Food;
 use App\Models\FoodChef;
+use App\Models\Reservation;
 use App\Models\Cart;
 use App\Models\Order;
 
@@ -26,8 +28,14 @@ class HomeController extends Controller
         $data = food::all();
         $data1 = foodchef::all();
         $userType = Auth::user()->userType;
+        $userCount = user::where('userType', '0')->count();
+        $adminCount = user::where('userType', '1')->count();
+        $chefCount = foodchef::select('name')->count();
+        $foodCount = food::select('name')->count();
+        $orderCount = order::select('id')->count();
+        $reservationCount = reservation::select('id')->count();
         if ($userType == 1) {
-            return view('admin.adminhome');
+            return view("admin.adminhome", compact("data","userCount","adminCount","chefCount","foodCount","orderCount","reservationCount"));
         }else{
             $user_id=Auth::id();
             $count = cart::where('user_id',$user_id)->count();
@@ -63,9 +71,13 @@ class HomeController extends Controller
     }
 
     public function remove($id){
-        $data = cart::find($id);
-        $data->delete();
-        return redirect()->back();
+        if(Auth::id()==$id){
+            $data = cart::find($id);
+            $data->delete();
+            return redirect()->back();
+        }else {
+            return redirect()->back();
+        }
     }
 
     public function orderconfirm(Request $request){

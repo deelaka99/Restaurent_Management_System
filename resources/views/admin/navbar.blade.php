@@ -1,10 +1,20 @@
 <!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top container bg-white">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top bg-white">
           <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/images/klassy-logo.png" align="klassy cafe html template"></a>
-          <p class="text-dark bold" style="padding:10px;">Admin Dashboard</p>
         </div>
-        <ul class="nav">          
+        <ul class="nav"> 
+          <li class="nav-item menu-items">
+            <span style="padding:20px">Admin Dashboard</span>
+          </li>  
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('/home')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-home mdi-24px"></i>
+              </span>
+              <span class="menu-title">Home</span>
+            </a>
+          </li>       
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('/users')}}">
               <span class="menu-icon">

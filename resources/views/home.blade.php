@@ -84,7 +84,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                     </a> 
                                 @endauth
                                 @guest
-                                    <!--Cart[0]-->
+                                    <a style="padding:10px;" class="display-3">   
+                                        <i class="mdi mdi-cart mdi-36px"></i>[0]</a></li>
+                                    </a> 
                                 @endguest
                             <li>
                                 @if (Route::has('login'))
