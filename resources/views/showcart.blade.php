@@ -133,17 +133,28 @@ https://templatemo.com/tm-558-klassy-cafe
                 <th scope="col" style="padding:30px;color:white">Quantity</th>
                 <th scope="col" style="padding:30px;color:white">Action</th>
             </tr>
+            <form action="{{url('orderconfirm')}}" method="post">
+            @csrf
             @foreach($data as $data)
             <tr align="center">
-                <td>{{$data->title}}</td>
-                <td>{{$data->price}}</td>
-                <td>{{$data->quantity}}</td>  
+                <td>
+                    <input class="text-dark" type="text" name="foodname[]" value="{{$data->title}}" hidden="">
+                    {{$data->title}}
+                </td>
+                <td>
+                    <input class="text-dark" type="text" name="price[]" value="{{$data->price}}" hidden="">
+                    {{$data->price}}
+                </td>
+                <td>
+                    <input class="text-dark" type="text" name="quantity[]" value="{{$data->quantity}}" hidden="">
+                    {{$data->quantity}}
+                </td>  
                 <td><a href="{{url('/remove',$data->id)}}" class="btn btn-warning">Remove</a></td>              
             </tr>
             @endforeach
         </table>
         <div style="padding:30px">
-            <button class="btn btn-primary" id="order">Order now</button>
+            <button class="btn btn-primary text-dark" type="button" id="order">Order now</button>
         </div>
         <div class="container form bg-light rounded-lg border border-dark border-5" id="appear" style="width:40%;padding:30px;display:none">
             <div style="padding:10px"> 
@@ -155,16 +166,17 @@ https://templatemo.com/tm-558-klassy-cafe
             </div>
             <div style="padding:10px" class="form-group row">
                 <label class="col-sm-2 col-form-label">Phone</label>
-                <input class="form-control col-sm-10" type="number" name="name" placeholder="Phone">
+                <input class="form-control col-sm-10" type="number" name="phone" placeholder="Phone">
             </div>
             <div style="padding:10px" class="form-group row">
                 <label class="col-sm-2 col-form-label">Address</label>
-                <input class="form-control col-sm-10" type="text" name="name" placeholder="Address">
+                <input class="form-control col-sm-10" type="text" name="address" placeholder="Address">
             </div>
             <div style="padding:10px">
                 <input style="color:black" class="btn btn-success" type="submit" value="Confirm Order">
-                <button id="close" class="btn btn-danger">Close</button>
+                <button id="close" type="button" class="btn btn-danger text-dark">Close</button>
             </div>
+            </form>
         </div>
     </div>
     <script type="text/javascript">

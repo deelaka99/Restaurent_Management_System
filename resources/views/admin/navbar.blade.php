@@ -40,5 +40,13 @@
               <span class="menu-title">Reservations</span>
             </a>
           </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('/orders')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i>
+              </span>
+              <span class="menu-title">Orders</span>
+            </a>
+          </li>
         </ul>
       </nav>
