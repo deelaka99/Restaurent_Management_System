@@ -32,7 +32,7 @@
                       <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Old Image</label>
                         <div class="col-sm-9">
-                          <img height="200" width="200" src="/chefimage/{{$data->image}}">
+                          <img height="70" width="70" src="/chefimage/{{$data->image}}">
                         </div>
                       </div>
                       <div class="form-group row">
@@ -41,12 +41,6 @@
                           <input class="form-control" type="file" name="image" required>
                         </div>
                       </div>
-                      <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Description</label>                        
-                          <div class="col-sm-9">
-                            <input class="form-control" style="color:lightgreen" type="text" name="description" value="{{$data->description}}" placeholder="Description" required>
-                          </div>
-                      </div> 
                       <div class="form-group row">
                           <div class="col-sm-9">
                             <input type="submit" value="Update chef" class="btn btn-primary">

@@ -32,7 +32,7 @@
                       <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Old Image</label>
                         <div class="col-sm-9">
-                          <img height="200" width="200" src="/foodimage/{{$data->image}}">
+                          <img height="100" width="100" src="/foodimage/{{$data->image}}">
                         </div>
                       </div>
                       <div class="form-group row">

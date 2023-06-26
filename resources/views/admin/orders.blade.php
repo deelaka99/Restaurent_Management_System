@@ -5,9 +5,9 @@
     @include("admin.admincss")
   </head>
   <body>
-        <div class="container-scroller">
+        <div class="container-scroller bg-dark">
             @include("admin.navbar")
-            <div style="padding:30px">
+            <div style="padding:20px">
                 <div>
                     <h1 class="h1" align="center">Current orders</h1>
                 </div>
@@ -18,7 +18,7 @@
                         <button class="btn btn-success" type="submit"><i class="mdi mdi-book-search mdi-36px"></i></button>
                     </form>
                 </div>
-                <table class="table table-dark table-hover">
+                <table class="table table-hover" style="background-color:black">
                     <tr>
                         <th style="padding:30px;color:white">Name</th>
                         <th style="padding:30px;color:white">Phone</th>

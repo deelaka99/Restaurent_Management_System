@@ -5,14 +5,14 @@
     @include("admin.admincss")
 </head>
 <body>
-    <div class="container-scroller">
+    <div class="container-scroller bg-dark">
         @include("admin.navbar")
         <div style="padding:30px">
             <div style="padding:10px">
                 <h1 align="center" class="h1">Registered Users</h1>
             </div>
-            <table class="table table-dark table-hover">
-                <tr class="bg-success">
+            <table class="table table-hover" style="background-color:black">
+                <tr>
                     <th style="padding:30px;color:white">Name</th>
                     <th style="padding:30px;color:white">Email</th>
                     <th style="padding:30px;color:white">Action</th>

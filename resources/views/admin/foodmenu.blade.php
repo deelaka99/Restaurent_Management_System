@@ -5,44 +5,43 @@
     @include("admin.admincss")
   </head>
   <body>
-        <div class="container-scroller">
+        <div class="container-scroller bg-dark">
             @include("admin.navbar")
-            <div style="position:relative; top:60px;">
-              <div class="card">
+              <div class="card bg-dark" style="padding:20px">
                 <div class="card-header text-center">
                   <h1 align="center">Adding New Foods</h1>
                 </div>
                 <div class="card-body">
-                  <blockquote class="blockquote mb-0">
+                  <blockquote class="blockquote mb-0 rounded" style="background-color:black">
                   <form action="{{url('/uploadfood')}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Title</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-4 col-form-label">Title</label>
+                        <div class="col-sm-8">
                           <input class="form-control" style="color:lightgreen" type="text" name="title" placeholder="Write a title" required>
                         </div>
                     </div >
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Price</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-4 col-form-label">Price</label>
+                        <div class="col-sm-8">
                           <input class="form-control" style="color:lightgreen" type="number" name="price" placeholder="Price" required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Image</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-4 col-form-label">Image</label>
+                        <div class="col-sm-8">
                           <input class="form-control" type="file" name="image" required>
                         </div>
                       </div>
                       <div class="form-group row">
-                          <label class="col-sm-2 col-form-label">Description</label>                        
-                          <div class="col-sm-10">
+                          <label class="col-sm-4 col-form-label">Description</label>                        
+                          <div class="col-sm-8">
                             <input class="form-control" style="color:lightgreen" type="text" name="description" placeholder="Description" required>
                           </div>
                       </div> 
                       <div class="form-group row">
-                          <div class="col-sm-10">
-                            <input type="submit" value="Save" class="btn btn-primary">
+                          <div class="col-sm-8">
+                            <input type="submit" value="Add Food" class="btn btn-primary">
                           </div>
                       </div>  
                     </form>
@@ -51,11 +50,11 @@
               </div>        
                 <!--Form ends from hre-->
                 <!--Deleting foods-->
-                <div>
+                <div style="padding:20px">
                   <div>
                     <h1 align="center">Currently added Foods</h1>
                   </div>
-                    <table class="table table-dark table-hover">
+                    <table class="table table-hover" style="background-color:black">
                       <thead>
                         <tr scope="">
                             <th scope="col" style="padding:30px;color:white">Food Name</th>
@@ -79,9 +78,7 @@
                         @endforeach
                       </tbody>
                     </table>
-                </div>
-            </div>
-            
+                </div> 
         </div>
       <!-- page-body-wrapper ends -->
     </div>

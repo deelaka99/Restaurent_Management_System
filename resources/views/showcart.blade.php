@@ -63,27 +63,18 @@ https://templatemo.com/tm-558-klassy-cafe
                             <li class="scroll-to-section"><a href="{{url('/redirects')}}">Menu</a></li>
                             <li class="scroll-to-section"><a href="{{url('/redirects')}}">Chefs</a></li> 
                             <li class="scroll-to-section"><a href="{{url('/redirects')}}">Contact Us</a></li>
-                            <li style="padding:10px" class="scroll-to-section bg-primary rounded shadow "><a>
+                            <li style="padding:10px" class="scroll-to-section bg-primary rounded shadow ">
                                 @auth
                                     <a style="padding:10px;" class="display-3" href="{{url('/showcart',Auth::user()->id)}}">   
-                                        <i class="mdi mdi-cart mdi-36px"></i>[{{$count}}]</a></li>
+                                        <i class="mdi mdi-cart mdi-36px"></i>[{{$count}}]</a>
                                     </a> 
                                 @endauth
-                            <li>
+                            </li>
+                            <li class="scroll-to-section">
                                 @if (Route::has('login'))
-                                    <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                                     @auth
-                                    <li>
                                         <x-app-layout></x-app-layout>
-                                    </li>
-                                @else
-                                    <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a></li>
-
-                                @if (Route::has('register'))
-                                    <li><a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a></li>
-                                @endif
                                     @endauth
-                                    </div>
                                 @endif
                             </li>
                         </ul>        
@@ -99,14 +90,14 @@ https://templatemo.com/tm-558-klassy-cafe
     <!-- ***** Header Area End ***** -->
     <div id="top" align="center">
         <div>
-            <h1 style="padding:30px" class="h1 text-primary">Food cart</h1>
+            <h1 style="padding:30px" class="h1 text-primary">Food cart - Checkout</h1>
         </div>
-        <table class="table table-dark table-hover table-bordered" style="width:60%">
+        <div style="display:flex;width:70%">
+        <table class="table table-dark table-hover table-bordered" style="width:80%">
             <tr align="center" style="background-color:black">
-                <th scope="col"  style="padding:30px;color:white">Food name</th>
-                <th scope="col" style="padding:30px;color:white">Price</th>
-                <th scope="col" style="padding:30px;color:white">Quantity</th>
-                <th scope="col" style="padding:30px;color:white">Action</th>
+                <th scope="col"  style="padding:10px;color:white">Food name</th>
+                <th scope="col" style="padding:10px;color:white">Price</th>
+                <th scope="col" style="padding:10px;color:white">Quantity</th>
             </tr>
             <form action="{{url('orderconfirm')}}" method="post">
             @csrf
@@ -123,11 +114,21 @@ https://templatemo.com/tm-558-klassy-cafe
                 <td>
                     <input class="text-dark" type="text" name="quantity[]" value="{{$data->quantity}}" hidden="">
                     {{$data->quantity}}
-                </td>  
-                <td><a href="{{url('/remove',$data->id)}}" class="btn btn-warning">Remove</a></td>              
+                </td>     
             </tr>
             @endforeach
         </table>
+        <table class="table table-dark table-hover table-bordered" style="width:20%">
+            <tr align="center" style="background-color:black">
+                <th scope="col" style="padding:16px;color:white">Action</th>
+            </tr>
+            @foreach($data1 as $data1)
+            <tr align="center">
+                <td><a href="{{url('/remove',$data1->id)}}" class="btn btn-warning">Remove</a></td>  
+            </tr>
+            @endforeach
+        </table>
+        </div>
         <div style="padding:30px">
             <button class="btn btn-primary text-dark" type="button" id="order">Order now</button>
         </div>

@@ -6,49 +6,48 @@
   </head>
   <body>
     <div class="">
-        <div class="container-scroller">
+        <div class="container-scroller bg-dark">
             @include("admin.navbar")
-            <div style="position:relative; top:60px;">
-            <div class="card">
+              <div class="card bg-dark" style="padding:20px">
                 <div class="card-header text-center">
                   <h1 align="center" class="h1">Adding New Chefs</h1>
                 </div>
                 <div class="card-body">
-                  <blockquote class="blockquote mb-0">
+                  <blockquote class="blockquote mb-0 rounded" style="background-color:black">
                   <form action="{{url('/uploadchef')}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Name</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-4 col-form-label">Name</label>
+                        <div class="col-sm-8">
                           <input class="form-control" style="color:lightgreen" type="text" name="name" placeholder="Enter name" required>
                         </div>
                     </div >
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Speciality</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-4 col-form-label">Speciality</label>
+                        <div class="col-sm-8">
                           <input class="form-control" style="color:lightgreen" type="text" name="speciality" placeholder="Enter speciality" required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Image</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-4 col-form-label">Image</label>
+                        <div class="col-sm-8">
                           <input class="form-control" type="file" name="image" required>
                         </div>
                       </div>      
                       <div class="form-group row">
-                          <div class="col-sm-10">
-                            <input type="submit" value="Add chef" class="btn btn-primary">
+                          <div class="col-sm-8">
+                            <input type="submit" value="Add Chef" class="btn btn-primary">
                           </div>
                       </div>  
                     </form>
                   </blockquote>
                 </div>
               </div>
-                <div>
+                <div style="padding:20px">
                     <div>
                       <h1 align="center">Currently added Chefs</h1>
                     </div>
-                    <table border="1" class="table table-dark table-hover">
+                    <table border="1" class="table table-hover" style="background-color:black">
                         <tr>
                             <th scope="col" style="padding:30px;color:white">Chef Name</th>
                             <th scope="col" style="padding:30px;color:white">Speciality</th>
@@ -68,7 +67,6 @@
                     </table>
                 </div>
             </div>
-        </div>
       <!-- page-body-wrapper ends -->
     </div>
     @include("admin.adminscript")

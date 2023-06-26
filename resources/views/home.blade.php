@@ -77,7 +77,7 @@ https://templatemo.com/tm-558-klassy-cafe
                             -->
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
                             <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li>
-                            <li style="padding:10px" class="scroll-to-section bg-warning rounded shadow "><a>
+                            <li style="padding:10px" class="scroll-to-section bg-warning rounded shadow ">
                                 @auth
                                     <a style="padding:10px;" class="display-3" href="{{url('/showcart',Auth::user()->id)}}">   
                                         <i class="mdi mdi-cart mdi-36px"></i>[{{$count}}]</a></li>
@@ -88,6 +88,7 @@ https://templatemo.com/tm-558-klassy-cafe
                                         <i class="mdi mdi-cart mdi-36px"></i>[0]</a></li>
                                     </a> 
                                 @endguest
+                            </li>
                             <li>
                                 @if (Route::has('login'))
                                     <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">

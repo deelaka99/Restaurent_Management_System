@@ -60,7 +60,7 @@ class HomeController extends Controller
     }
 
     public function showcart(Request $request, $id){
-        if (Auth::id()==$id) {
+        if (Auth::id()) {
             $count=cart::where('user_id',$id)->count();
             $data = cart::where('user_id',$id)->join('food','carts.food_id','=','food.id')->get();
             $data1 = cart::select('*')->where('user_id','=',$id)->get();
@@ -71,12 +71,12 @@ class HomeController extends Controller
     }
 
     public function remove($id){
-        if(Auth::id()==$id){
+        if(Auth::id()){
             $data = cart::find($id);
             $data->delete();
             return redirect()->back();
         }else {
-            return redirect()->back();
+            return redirect('login');
         }
     }
 
