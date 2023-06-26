@@ -5,10 +5,9 @@
     @include("admin.admincss")
   </head>
   <body>
-    <div class="">
         <div class="container-scroller">
             @include("admin.navbar")
-            <div class="" style="padding:30px">
+            <div style="padding:30px">
                 <div>
                     <h1 class="h1" align="center">Current orders</h1>
                 </div>
@@ -16,10 +15,10 @@
                     <form action="{{url('/search')}}" method="get">
                         @csrf
                         <input class="rounded border border-primary border-3 text-dark" type="text" name="search" placeholder="Search here...">
-                        <input class="btn btn-success btn-lg" type="submit" value="Search">
+                        <button class="btn btn-success" type="submit"><i class="mdi mdi-book-search mdi-36px"></i></button>
                     </form>
                 </div>
-                <table class="table table-dark">
+                <table class="table table-dark table-hover">
                     <tr>
                         <th style="padding:30px;color:white">Name</th>
                         <th style="padding:30px;color:white">Phone</th>
@@ -44,7 +43,6 @@
             </div>
         </div>
       <!-- page-body-wrapper ends -->
-    </div>
     @include("admin.adminscript")
   </body>
 </html>

@@ -12,11 +12,14 @@ use App\Models\Order;
 class HomeController extends Controller
 {
     public function index(){
-        $data = food::all();
-        $data1 = foodchef::all();
-        $user_id=Auth::id();
-        $count = cart::where('user_id',$user_id)->count();
-        return view("home",compact("data","data1","count"));
+        if (Auth::id()) {
+            return redirect('redirects');
+        }else{
+            $data = food::all();
+            $data1 = foodchef::all();
+            $user_id=Auth::id();
+            return view("home",compact("data","data1"));
+        }
     }
 
     public function redirects(){
@@ -49,10 +52,14 @@ class HomeController extends Controller
     }
 
     public function showcart(Request $request, $id){
-        $count=cart::where('user_id',$id)->count();
-        $data = cart::where('user_id',$id)->join('food','carts.food_id','=','food.id')->get();
-        $data1 = cart::select('*')->where('user_id','=',$id)->get();
-        return view('showcart',compact('count','data','data1')); 
+        if (Auth::id()==$id) {
+            $count=cart::where('user_id',$id)->count();
+            $data = cart::where('user_id',$id)->join('food','carts.food_id','=','food.id')->get();
+            $data1 = cart::select('*')->where('user_id','=',$id)->get();
+            return view('showcart',compact('count','data','data1'));
+        } else {
+            return redirect()->back();
+        }
     }
 
     public function remove($id){

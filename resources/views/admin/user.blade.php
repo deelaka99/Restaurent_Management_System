@@ -7,19 +7,19 @@
 <body>
     <div class="container-scroller">
         @include("admin.navbar")
-        <div style="position:relative; top:60px; right:-150px">
-            <div>
-                <h1 align="center">Registered Users</h1>
+        <div style="padding:30px">
+            <div style="padding:10px">
+                <h1 align="center" class="h1">Registered Users</h1>
             </div>
-            <table border="1" class="table table-secondary table-hover">
-                <tr bgcolor="darkgrey">
-                    <th style="padding:20px;color:black">Name</th>
-                    <th style="padding:20px;color:black">Email</th>
-                    <th style="padding:20px;color:black">Action</th>
+            <table class="table table-dark table-hover">
+                <tr class="bg-success">
+                    <th style="padding:30px;color:white">Name</th>
+                    <th style="padding:30px;color:white">Email</th>
+                    <th style="padding:30px;color:white">Action</th>
                 </tr>
 
                 @foreach($data as $data)
-                <tr align="center" bgcolor="black">
+                <tr align="center">
                     <td>{{$data->name}}</td>
                     <td>{{$data->email}}</td>
                     @if($data->userType=="0")
@@ -29,7 +29,6 @@
                     @endif 
                 </tr>
                 @endforeach
-
             </table>
         </div>
     </div>

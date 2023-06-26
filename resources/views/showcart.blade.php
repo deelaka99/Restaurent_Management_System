@@ -21,7 +21,7 @@ https://templatemo.com/tm-558-klassy-cafe
 -->
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.9.55/css/materialdesignicons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
     <link rel="stylesheet" href="assets/css/templatemo-klassy-cafe.css">
@@ -46,54 +46,29 @@ https://templatemo.com/tm-558-klassy-cafe
     
     
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
+    <header class="header-area header-sticky" style="padding:1%">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
+                        <a class="logo">
                             <img src="assets/images/klassy-logo.png" align="klassy cafe html template">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about">About</a></li>
-                           	
-                        <!-- 
-                            <li class="submenu">
-                                <a href="javascript:;">Drop Down</a>
-                                <ul>
-                                    <li><a href="#">Drop Down Page 1</a></li>
-                                    <li><a href="#">Drop Down Page 2</a></li>
-                                    <li><a href="#">Drop Down Page 3</a></li>
-                                </ul>
-                            </li>
-                        -->
-                            <li class="scroll-to-section"><a href="#menu">Menu</a></li>
-                            <li class="scroll-to-section"><a href="#chefs">Chefs</a></li> 
-                            <li class="submenu">
-                                <a href="javascript:;">Features</a>
-                                <ul>
-                                    <li><a href="#">Features Page 1</a></li>
-                                    <li><a href="#">Features Page 2</a></li>
-                                    <li><a href="#">Features Page 3</a></li>
-                                    <li><a href="#">Features Page 4</a></li>
-                                </ul>
-                            </li>
-                            <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
-                            <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li>
-
-                            <li class="scroll-to-section"><a href="#reservation">
+                            <li class="scroll-to-section"><a href="{{url('/redirects')}}" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="{{url('/redirects')}}">About</a></li>
+                            <li class="scroll-to-section"><a href="{{url('/redirects')}}">Menu</a></li>
+                            <li class="scroll-to-section"><a href="{{url('/redirects')}}">Chefs</a></li> 
+                            <li class="scroll-to-section"><a href="{{url('/redirects')}}">Contact Us</a></li>
+                            <li style="padding:10px" class="scroll-to-section bg-primary rounded shadow "><a>
                                 @auth
-                                    <a href="{{url('/showcart',Auth::user()->id)}}">   
-                                        Cart[{{$count}}]</a></li>
+                                    <a style="padding:10px;" class="display-3" href="{{url('/showcart',Auth::user()->id)}}">   
+                                        <i class="mdi mdi-cart mdi-36px"></i>[{{$count}}]</a></li>
                                     </a> 
                                 @endauth
-                                @guest
-                                    Cart[0]
-                                @endguest
                             <li>
                                 @if (Route::has('login'))
                                     <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -124,7 +99,7 @@ https://templatemo.com/tm-558-klassy-cafe
     <!-- ***** Header Area End ***** -->
     <div id="top" align="center">
         <div>
-            <h1 class="h1 text-primary">Food cart</h1>
+            <h1 style="padding:30px" class="h1 text-primary">Food cart</h1>
         </div>
         <table class="table table-dark table-hover table-bordered" style="width:60%">
             <tr align="center" style="background-color:black">
