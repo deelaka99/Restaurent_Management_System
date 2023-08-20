@@ -8,6 +8,8 @@
     <div class="">
         <div class="container-scroller bg-dark">
             @include("admin.navbar")
+            <div class="row justify-content-center">
+      <div class="col-md-8">
               <div class="card bg-dark" style="padding:20px">
                 <div class="card-header text-center">
                   <h1 align="center" class="h1">Adding New Chefs</h1>
@@ -43,6 +45,9 @@
                   </blockquote>
                 </div>
               </div>
+
+              <div class="row justify-content-center">
+      <div class="col-md-10">
                 <div style="padding:20px">
                     <div>
                       <h1 align="center">Currently added Chefs</h1>

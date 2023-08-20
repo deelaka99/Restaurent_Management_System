@@ -7,9 +7,13 @@
   <body>
         <div class="container-scroller bg-dark">
             @include("admin.navbar")
+            
+         <!-- Adding New Foods -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
               <div class="card bg-dark" style="padding:20px">
                 <div class="card-header text-center">
-                  <h1 align="center">Adding New Foods</h1>
+                  <h1>Adding New Foods</h1>
                 </div>
                 <div class="card-body">
                   <blockquote class="blockquote mb-0 rounded" style="background-color:black">
@@ -50,11 +54,16 @@
               </div>        
                 <!--Form ends from hre-->
                 <!--Deleting foods-->
-                <div style="padding:20px">
-                  <div>
-                    <h1 align="center">Currently added Foods</h1>
-                  </div>
-                    <table class="table table-hover" style="background-color:black">
+        <!-- Currently Added Foods -->
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="card bg-dark" style="padding:20px">
+          <div>
+            <h1 align="center">Currently Added Foods</h1>
+          </div>
+          
+            <!-- Table displaying Currently Added Foods -->
+            <table class="table table-hover" style="background-color:black">
                       <thead>
                         <tr scope="">
                             <th scope="col" style="padding:30px;color:white">Food Name</th>

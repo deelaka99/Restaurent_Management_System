@@ -8,7 +8,7 @@
                             <h6>Contact Us</h6>
                             <h2>Here You Can Make A Reservation Or Just walkin to our cafe</h2>
                         </div>
-                        <p>Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei sollicitudin urna diam, sed commodo purus porta ut.</p>
+                        <p>We're thrilled to connect with you and assist you in any way we can. Whether you have questions about our delectable menu, wish to reserve a table for an unforgettable dining experience, or simply want to share your feedback, our dedicated team is here to make your experience exceptional.</p>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="phone">
@@ -21,7 +21,7 @@
                                 <div class="message">
                                     <i class="fa fa-envelope"></i>
                                     <h4>Emails</h4>
-                                    <span><a href="#">hello@company.com</a><br><a href="#">info@company.com</a></span>
+                                    <span><a href="#">klassycafe@company.com</a><br><a href="#">infoklassy@company.com</a></span>
                                 </div>
                             </div>
                         </div>
