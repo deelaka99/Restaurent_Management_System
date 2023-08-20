@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-    <title>Klassy Cafe - Restaurant HTML Template</title>
+    <title>Klassy Cafe</title>
 <!--
     
 TemplateMo 558 Klassy Cafe

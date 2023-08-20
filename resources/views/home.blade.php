@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Klassy Cafe - Restaurant HTML Template</title>
+    <title>Klassy Cafe</title>
 <!--
     
 TemplateMo 558 Klassy Cafe
@@ -175,7 +175,11 @@ https://templatemo.com/tm-558-klassy-cafe
                             <h6>About Us</h6>
                             <h2>We Leave A Delicious Memory For You</h2>
                         </div>
-                        <p>Klassy Cafe is one of the best <a href="https://templatemo.com/tag/restaurant" target="_blank" rel="sponsored">restaurant HTML templates</a> with Bootstrap v4.5.2 CSS framework. You can download and feel free to use this website template layout for your restaurant business. You are allowed to use this template for commercial purposes. <br><br>You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please contact us for more information.</p>
+                        <p>Klassy Cafe is a cozy and stylish cafe that serves up delicious cakes, pastries, and other sweet treats. We also have a selection of savory snacks and meals. Come in and enjoy our delicious food and friendly service!<br>
+                        <br>Klassy Cafe was founded in 1990 by a passionate baker who wanted to share her love of cakes and pastries with the world.
+The cafe is located in a charming neighborhood and has a warm and inviting atmosphere.
+The menu features a wide variety of cakes, pastries, and other sweet treats, as well as a selection of savory snacks and meals.
+Klassy Cafe is a popular spot for locals and tourists alike, and is known for its delicious food and friendly service.</p>
                         <div class="row">
                             <div class="col-4">
                                 <img src="assets/images/about-thumb-01.jpg" alt="">
@@ -243,9 +247,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-01.png" alt="">
                                                             <h4>Fresh Chicken Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>Fresh Chicken Salad is a vibrant dish combining tender chicken, crisp vegetables, and zesty dressing. A delightful blend of flavors and textures, perfect for a light and nutritious meal.</p>
                                                             <div class="price">
-                                                                <h6>$10.50</h6>
+                                                                <h6>Rs.500</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -253,9 +257,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-02.png" alt="">
                                                             <h4>Orange Juice</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>Orange juice is a refreshing beverage made from freshly squeezed oranges, known for its vibrant color, tangy-sweet flavor, and rich vitamin C content.</p>
                                                             <div class="price">
-                                                                <h6>$8.50</h6>
+                                                                <h6>Rs.250</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -263,9 +267,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-03.png" alt="">
                                                             <h4>Fruit Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>Fruit salad is a refreshing dish made by combining a variety of fresh fruits. It's a colorful and nutritious option often served as a light and healthy snack or dessert.</p>
                                                             <div class="price">
-                                                                <h6>$9.90</h6>
+                                                                <h6>Rs.350</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -279,9 +283,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-04.png" alt="">
                                                             <h4>Eggs Omelette</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>Whisked eggs cooked to perfection, folded around fillings like cheese, vegetables, and meats. A quick, customizable, and satisfying dish for breakfast or brunch.</p>
                                                             <div class="price">
-                                                                <h6>$6.50</h6>
+                                                                <h6>Rs.450</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -289,9 +293,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-05.png" alt="">
                                                             <h4>Dollma Pire</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>Dolma Pire is a Macedonian dish featuring vine leaves stuffed with a mixture of rice, minced meat, herbs, and spices, usually served with yogurt.</p>
                                                             <div class="price">
-                                                                <h6>$5.00</h6>
+                                                                <h6>Rs.400</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -299,9 +303,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-06.png" alt="">
                                                             <h4>Omelette & Cheese</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>A savory dish made by whisking eggs, frying them until set, and folding with melted cheese. A simple and satisfying breakfast or meal option.</p>
                                                             <div class="price">
-                                                                <h6>$4.10</h6>
+                                                                <h6>Rs.300</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -319,9 +323,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-04.png" alt="">
                                                             <h4>Eggs Omelette</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>Whisked eggs cooked to perfection, folded around fillings like cheese, vegetables, and meats. A quick, customizable, and satisfying dish for breakfast or brunch.</p>
                                                             <div class="price">
-                                                                <h6>$14</h6>
+                                                                <h6>Rs.450</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -329,9 +333,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-05.png" alt="">
                                                             <h4>Dollma Pire</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>Dolma Pire is a Macedonian dish featuring vine leaves stuffed with a mixture of rice, minced meat, herbs, and spices, usually served with yogurt.</p>
                                                             <div class="price">
-                                                                <h6>$18</h6>
+                                                                <h6>Rs.400</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -339,9 +343,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-06.png" alt="">
                                                             <h4>Omelette & Cheese</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>A savory dish made by whisking eggs, frying them until set, and folding with melted cheese. A simple and satisfying breakfast or meal option.</p>
                                                             <div class="price">
-                                                                <h6>$22</h6>
+                                                                <h6>Rs.300</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -355,9 +359,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-01.png" alt="">
                                                             <h4>Fresh Chicken Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>Fresh Chicken Salad is a vibrant dish combining tender chicken, crisp vegetables, and zesty dressing. A delightful blend of flavors and textures, perfect for a light and nutritious meal.</p>
                                                             <div class="price">
-                                                                <h6>$10</h6>
+                                                                <h6>Rs.500</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -365,9 +369,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-02.png" alt="">
                                                             <h4>Orange Juice</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>Orange juice is a refreshing beverage made from freshly squeezed oranges, known for its vibrant color, tangy-sweet flavor, and rich vitamin C content.</p>
                                                             <div class="price">
-                                                                <h6>$20</h6>
+                                                                <h6>Rs.250</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -375,9 +379,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-03.png" alt="">
                                                             <h4>Fruit Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <p>Fruit salad is a refreshing dish made by combining a variety of fresh fruits. It's a colorful and nutritious option often served as a light and healthy snack or dessert.</p>
                                                             <div class="price">
-                                                                <h6>$30</h6>
+                                                                <h6>Rs.350</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -394,30 +398,30 @@ https://templatemo.com/tm-558-klassy-cafe
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-05.png" alt="">
-                                                            <h4>Eggs Omelette</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <h4>Dollma Pire</h4>
+                                                            <p>Dolma Pire is a Macedonian dish featuring vine leaves stuffed with a mixture of rice, minced meat, herbs, and spices, usually served with yogurt.</p>
                                                             <div class="price">
-                                                                <h6>$14</h6>
+                                                                <h6>Rs.400</h6>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-03.png" alt="">
-                                                            <h4>Orange Juice</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <h4>Fruit Salad</h4>
+                                                            <p>Fruit salad is a refreshing dish made by combining a variety of fresh fruits. It's a colorful and nutritious option often served as a light and healthy snack or dessert.</p>
                                                             <div class="price">
-                                                                <h6>$18</h6>
+                                                                <h6>Rs.350</h6>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-02.png" alt="">
-                                                            <h4>Fruit Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <h4>Orange Juice</h4>
+                                                            <p>Orange juice is a refreshing beverage made from freshly squeezed oranges, known for its vibrant color, tangy-sweet flavor, and rich vitamin C content.</p>
                                                             <div class="price">
-                                                                <h6>$10</h6>
+                                                                <h6>Rs.250</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -430,30 +434,30 @@ https://templatemo.com/tm-558-klassy-cafe
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-06.png" alt="">
-                                                            <h4>Fresh Chicken Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <h4>Omelette & Cheese</h4>
+                                                            <p>A savory dish made by whisking eggs, frying them until set, and folding with melted cheese. A simple and satisfying breakfast or meal option.</p>
                                                             <div class="price">
-                                                                <h6>$8.50</h6>
+                                                                <h6>Rs.300</h6>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-01.png" alt="">
-                                                            <h4>Dollma Pire</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <h4>Fresh Chicken Salad</h4>
+                                                            <p>Fresh Chicken Salad is a vibrant dish combining tender chicken, crisp vegetables, and zesty dressing. A delightful blend of flavors and textures, perfect for a light and nutritious meal.</p>
                                                             <div class="price">
-                                                                <h6>$9</h6>
+                                                                <h6>Rs.500</h6>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-04.png" alt="">
-                                                            <h4>Omelette & Cheese</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <h4>Eggs Omelette</h4>
+                                                            <p>Whisked eggs cooked to perfection, folded around fillings like cheese, vegetables, and meats. A quick, customizable, and satisfying dish for breakfast or brunch.</p>
                                                             <div class="price">
-                                                                <h6>$11</h6>
+                                                                <h6>Rs.450</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -492,9 +496,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
                 <div class="col-lg-4 col-xs-12">
                     <div class="left-text-content">
-                        <p>© Copyright Klassy Cafe Co.
-                        
-                        <br>Design: TemplateMo</p>
+                        <p>© Copyright Klassy Cafe Co.</p>
                     </div>
                 </div>
             </div>
